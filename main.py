@@ -11,3 +11,9 @@ def area_of_circle(radius):
     area = pi * radius ** 2
     return area
 print(area_of_circle(5))
+
+# function to calculate the area of a rectangle
+def area_of_rectangle(length, width):
+    area = length * width
+    return area
+print(area_of_rectangle(5, 3))
