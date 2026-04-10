@@ -4,7 +4,7 @@ def volume_of_sphere(radius):
     pi = 3.14159
     volume = (4/3) * pi * radius ** 3
     return volume
-print(volume_of_sphere(5))
+print(volume_of_sphere(9))
 
 # function to calculate the area of a circle
 def area_of_circle(radius):
