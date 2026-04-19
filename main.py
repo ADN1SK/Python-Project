@@ -24,7 +24,6 @@
 #     print(line)
 
 
-<<<<<<< HEAD
 # fname= input("enter the file name:")
 # fhand=open(fname)
 # count=0
@@ -66,13 +65,3 @@ for word in words:
     counts[word]= counts.get(word,0) 
 
 # ord() function returns the Unicode code point for a given character. In this case, it returns the code points for 'H', 'e', and the newline character '\n'.
-=======
-fname= input("enter the file name:")
-fhand=open (fname)
-count=0
-for line in fhand:
-    if line.startswith("m"):
-        count= count + 1
-print("there were", count, "m line in", fname)
-
->>>>>>> 0517bed8f935d45ed7508f8109c9c8acaade298b
