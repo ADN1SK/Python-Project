@@ -1,2 +1,13 @@
 # Ignore the database file
-MONGODB adammoha0987 db.txt
+test.txt
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+.DS_Store
+.idea/
+.vscode/

@@ -1,66 +1,101 @@
-# # function that counts the number of words in a string
-# def count_words(string):
-#     words = string.split()
-#     return len(words)
-# print(count_words("Hello world! This is a test and my name is Adam."))
+# # # function that counts the number of words in a string
+# # def count_words(string):
+# #     words = string.split()
+# #     return len(words)
+# # print(count_words("Hello world! This is a test and my name is Adam."))
 
 
-# xfile= open('Life Expectancy Data.csv')
-# count=0
-# for line in xfile:
-#     count= count +1
-#     print('line count: ',count)
+# # xfile= open('Life Expectancy Data.csv')
+# # count=0
+# # for line in xfile:
+# #     count= count +1
+# #     print('line count: ',count)
 
-# xfile= open('Life Expectancy Data.csv')
-# inp= xfile.read()
-# print(len(inp))
-# print(inp[:20])
+# # xfile= open('Life Expectancy Data.csv')
+# # inp= xfile.read()
+# # print(len(inp))
+# # print(inp[:20])
         
-# xfile=open('MONGODB adammoha0987 db.txt')
-# for line in xfile:
-#     line=line.lstrip()
-#     if not line.startswith("adam"):
-#         continue
-#     print(line)
+# # xfile=open('MONGODB adammoha0987 db.txt')
+# # for line in xfile:
+# #     line=line.lstrip()
+# #     if not line.startswith("adam"):
+# #         continue
+# #     print(line)
 
 
-# fname= input("enter the file name:")
-# fhand=open(fname)
-# count=0
-# for line in fhand:
-#     if line.startswith("m"):
-#         count= count + 1
-# print("there were", count, "m line in", fname)
+# # fname= input("enter the file name:")
+# # fhand=open(fname)
+# # count=0
+# # for line in fhand:
+# #     if line.startswith("m"):
+# #         count= count + 1
+# # print("there were", count, "m line in", fname)
 
-# fname= input('enter file:')
-# if len(fname) < 1:fname='test.txt'
-# hand= open(fname)
-# for line in hand:
-#     line= line.rstrip()
-#     #print(line)
-#     wds=line.split()
-#     print(wds)
-#     for w in wds:
-#         print(w)
-# import socket 
-# mysock= socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-# mysock.connect(('data.pr4e.org', 80))
-# cmd= 'GET http://data.pr4e.org/romeo.txt HTTP/1.0\r\n\r\n'.encode()
-# mysock.send(cmd)
-# while True:
-#     data= mysock.recv(512)
-#     if len(data) < 1:
-#         break
-#     print(data.decode(),end='')
-# mysock.close()
-# print(ord('H'))
-# print(ord('e'))
-# print(ord('\n'))
-name= 'Life Expectancy Data.csv'
-handle= open(name)
-text= handle.read()
-words= text.split()
-counts= dict()
-for word in words:
-    counts[word]= counts.get(word,0) + 1
-print(f"Total words: {len(words)}, Unique words: {len(counts)}")
+# # fname= input('enter file:')
+# # if len(fname) < 1:fname='test.txt'
+# # hand= open(fname)
+# # for line in hand:
+# #     line= line.rstrip()
+# #     #print(line)
+# #     wds=line.split()
+# #     print(wds)
+# #     for w in wds:
+# #         print(w)
+# # import socket 
+# # mysock= socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# # mysock.connect(('data.pr4e.org', 80))
+# # cmd= 'GET http://data.pr4e.org/romeo.txt HTTP/1.0\r\n\r\n'.encode()
+# # mysock.send(cmd)
+# # while True:
+# #     data= mysock.recv(512)
+# #     if len(data) < 1:
+# #         break
+# #     print(data.decode(),end='')
+# # mysock.close()
+# # print(ord('H'))
+# # print(ord('e'))
+# # print(ord('\n'))
+# # name= 'Life Expectancy Data.csv'
+# # handle= open(name)
+# # text= handle.read()
+# # words= text.split()
+# # counts= dict()
+# # for word in words:
+# # #     counts[word]= counts.get(word,0) + 1
+# # # print(f"Total words: {len(words)}, Unique words: {len(counts)}")
+# # import urllib.request, urllib.parse, urllib.error
+# # fhand= urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
+# # for line in fhand:
+# #     print(line.decode().strip())
+# # import urllib.request, urllib.parse, urllib.error
+# # from bs4 import BeautifulSoup
+# # url= input('enter url:')
+# # html= urllib.request.urlopen(url).read()
+# # soup= BeautifulSoup(html, 'html.parser')
+# # tags= soup('a')
+# # for tag in tags:
+# #     print(tag.get('href', None))
+# import urllib.request, urllib.parse, urllib.error
+# from bs4 import BeautifulSoup
+# import ssl
+# ctx= ssl.create_default_context()
+# ctx.check_hostname= False
+# ctx.verify_mode= ssl.CERT_NONE
+# url= input('enter url:')
+# html= urllib.request.urlopen(url, context=ctx).read()
+# soup= BeautifulSoup(html, 'html.parser')
+# tags= soup('a')
+# for tag in tags:
+#     print(tag.get('href', None))
+# import xml.etree.ElementTree as ET
+# data= '''<person>
+#     <name>Adam</name>
+#     <age>30</age>
+#     <city>New York</city>
+# </person>'''
+# tree= ET.fromstring(data)
+# name= tree.find('name').text
+# age= tree.find('age').text
+# city= tree.find('city').text
+# print(f"Name: {name}, Age: {age}, City: {city}")

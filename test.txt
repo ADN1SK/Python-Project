@@ -1,8 +1,0 @@
-MONGODB
-adammoha0987_db_user
-rqEnYMtQoJgBm8Mx
-mongodb+srv://adammoha0987_db_user:<rqEnYMtQoJgBm8Mx>@cluster0.n40gryi.mongodb.net/?appName=Cluster0
-MONGO_URI=mongodb+srv://adammoha0987_db_user:rqEnYMtQoJgBm8Mx@cluster0.n40gryi.mongodb.net/moviesDB?retryWrites=true&w=majority
-
-
-
