@@ -11,3 +11,7 @@ __pycache__/
 .DS_Store
 .idea/
 .vscode/
+test.txt
+Life Expectancy Data.csv
+requirements.txt
+
