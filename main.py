@@ -56,12 +56,11 @@
 # print(ord('H'))
 # print(ord('e'))
 # print(ord('\n'))
-name= input('enter file:')
+name= 'Life Expectancy Data.csv'
 handle= open(name)
 text= handle.read()
 words= text.split()
 counts= dict()
 for word in words:
-    counts[word]= counts.get(word,0) 
-
-# ord() function returns the Unicode code point for a given character. In this case, it returns the code points for 'H', 'e', and the newline character '\n'.
+    counts[word]= counts.get(word,0) + 1
+print(f"Total words: {len(words)}, Unique words: {len(counts)}")
